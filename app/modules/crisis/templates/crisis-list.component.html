@@ -1,0 +1,7 @@
+<div>
+    <ul class="crisis">
+        <li *ngFor="#crisis of crises" [class.selected]="crisis.id === selectedId" (click)="onSelect(crisis)">
+            <span class="badge">{{crisis.id}}</span> {{crisis.name}}
+        </li>
+    </ul>
+</div>
